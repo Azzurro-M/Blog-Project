@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* FLEX LAYOUT */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'work sans', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    color: white;
+    padding: 1em;
+    background-color: black;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER AND LOGO */
+
+.logo {
+    width: 100pt;
+    height: 100pt;
+}
+
+header {
+    padding: 1em;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+
+/*Navigation*/
+
+nav {
+    background: #999999;
+}
+ 
+nav > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+   
+    list-style: none;
+    font-size: 20px;
+    padding: 5px;   
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+figcaption {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.author-info { 
+
+    margin: 20px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.author-info > ul {
+    list-style: none;
+}
+
+span {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+img {
+
+    border-radius: 80%;
+    margin: auto 50px
+}
+
+p {
+   padding: 20px;
+}
+
+/* SOCIAL */
+
+.social {
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-instagram {
+    background-color: fuchsia;
+    color: white;
+  }
+
+
+/* SCREEN READABILITY */
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    nav {
+        background-color: black;
+        width: 40%;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+
+    .card > img {
+
+        width: 70%;
+
+    }
+
+    .card > figcaption {
+        text-align: center;
+    }
+
+
+
+
+}

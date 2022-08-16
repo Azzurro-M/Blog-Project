@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'work sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.logo {
+    width: 100pt;
+    height: 100pt;
+}
+
+header {
+    padding: 1em;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Navigation*/
+
+nav {
+    background: #999999;
+
+}
+ 
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+aside {
+    background: #999999;
+    padding: 1em;
+    font-size: 20px;
+    max-width: 300px;
+}
+
+.related{
+    list-style: circle;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.articles {
+    font-size: 15px;
+}
+
+
+.menu {
+   
+    list-style: none;
+    font-size: 20px;
+    padding: 5px;   
+}
+
+/* Main Content */
+
+.mainpic {
+    width: 800px;
+    float: left;
+    border: solid 5px black;
+
+}
+
+main {
+    min-height: 100vh;
+    padding: 1em;
+    font-size: 20px
+}
+
+
+
+footer {
+    /* flex-direction: column;
+    flex: 5; */
+
+    margin: 50px;
+}
+
+
+/* anchor */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+
+/* GRID 1 */
+
+.container-headshot {
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 20px;
+    background-color: black;
+    padding: 50px;
+    
+}
+
+.gallery {
+    background-color: black;
+    color: white
+}
+
+.headshot {
+    padding: 40px;
+}
+
+.actors {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    padding: 50px;
+}
+
+.grid1 {
+    width: 250px;
+    height: 350px;
+}
+
+.grid2 {
+    width: 250px;
+    height: 350px;
+}
+
+.grid3 {
+    width: 250px;
+    height: 350px;
+}
+
+.grid4 {
+    width: 250px;
+    height: 350px;
+}
+
+/* GRID 2 */
+
+.wedding {
+    background-color: black;
+    color: white;
+}
+
+.wedding-title {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.perfect-wedding {
+
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    padding: 50px;
+
+}
+
+.wedding-container {
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 20px;
+    background-color: black;
+    padding: 50px;
+
+}
+
+
+/* SCREEN READABILITY */
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    nav, aside {
+        background-color: black;
+    }
+
+    .mainpic {
+        width: 100%;
+    }
+
+    .container-headshot {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wedding-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    }
+    
+
+
