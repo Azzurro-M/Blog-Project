@@ -204,6 +204,15 @@ a:hover {
 
 }
 
+button {
+    background-color: #999999;
+    color: black;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
 
 /* SCREEN READABILITY */
 
